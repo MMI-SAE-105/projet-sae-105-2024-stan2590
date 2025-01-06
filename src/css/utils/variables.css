@@ -1,0 +1,25 @@
+:root {
+    [data-theme="Mode 1"] {
+        /* color */
+        --color: #3273e3;
+        --color-2: #5500ff;
+        --bleu-foncé: #061d37;
+      }
+  
+    /* Text-size styles */
+    --text-size-roboto: 15px;
+    --text-size-orbitron-30: 30px;
+    --text-size-orbitron-20: 20px;
+    --text-size-orbitron-28: 28px;
+    --text-size-orbitron-26: 26px;
+  
+    /* Font-family styles */
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-orbitron-bold: 700; 
+    --font-weight-roboto-semibold: 600; 
+    --font-weight-orbitron-regular: 400; 
+}
+  
+    
+  

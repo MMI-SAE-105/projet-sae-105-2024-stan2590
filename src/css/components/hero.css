@@ -1,0 +1,111 @@
+.language-toggle {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    background-color: #4285f4;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Switch toggle */
+.toggle-switch {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position initiale */
+.toggle-switch .flag.flag-fr {
+    background: linear-gradient(to right, #0055A4, #FFF, #EF4135);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Position lorsque activé */
+.toggle-switch.active {
+    transform: translateX(35px);
+}
+
+/* Drapeau anglais */
+.toggle-switch .flag.flag-en {
+    display: none; /* Masqué par défaut */
+    background: linear-gradient(to bottom, #00247D, #FFF, #CF142B);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Afficher le drapeau anglais quand activé */
+.toggle-switch.active .flag.flag-fr {
+    display: none;
+}
+
+.toggle-switch.active .flag.flag-en {
+    display: block;
+}
+
+/* Style de la section card */
+.article {
+    background-color: #001F3F; /* Fond sombre */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 20px;
+    width: 300px; /* Largeur de la carte */
+    text-align: center; /* Centrer le contenu */
+    margin: 20px auto; /* Centrer la carte dans la page */
+}
+
+/* Image de la carte */
+.article__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Espacement en dessous de l'image */
+}
+
+.card__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%; /* Rendre l'image circulaire */
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* Texte de description */
+.article__description {
+    color: #ffffff; /* Texte blanc */
+    font-size: 14px; /* Taille du texte */
+    line-height: 1.5; /* Hauteur de ligne pour la lisibilité */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+/* Bouton */
+.article__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #3B82F6, #6A67CE); /* Dégradé bleu-violet */
+    color: #ffffff; /* Texte blanc */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet survol bouton */
+.article__button:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre accentuée */
+}

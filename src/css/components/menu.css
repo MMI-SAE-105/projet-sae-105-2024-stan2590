@@ -1,0 +1,196 @@
+.menu-btn {
+   
+    top: 0px;
+    color: black;
+    border: none;
+    padding: 20x 15px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    transform: scale(1.4);     
+}
+
+.menu {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: #061d37 !important;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space5x) var(--space3x) var(--space3x);
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+  }
+  .close-btn {
+    position: relative;
+    width: 40px; /* Largeur de la croix */
+    height: 40px; /* Hauteur de la croix */
+    background-color: #FFF;
+}
+
+
+
+  .menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  .menu__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--fs-xl);
+    display: block;
+  }
+  
+  .menu__link--silent {
+    color: var(--gray-600);
+    font-size: var(--fs-s);
+  }
+  
+  .menu__item {
+    margin-bottom: var(--space3x);
+    padding-bottom: var(--space1x);
+    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid white; 
+    margin-bottom: 30px; 
+    padding-bottom: 30px; 
+    width: 330px;
+  }
+  
+  .menu__social-network,
+  .menu__terms {
+    display: flex;
+    gap: var(--space2x);
+    justify-content: end;
+    margin-bottom: var(--space2x);
+  }
+  
+  .menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: "";
+    background: var(--black);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+  /* Technique pour transformer les 3 barres du bouton de menu en croix
+  Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+  .menu-btn[aria-expanded="true"] .menu-btn__bar,
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background: var(--white);
+  }
+  
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  .menu__link {
+    color: #FFF; 
+    font-family: 'Orbitron';
+    font-weight: 400
+    font-size: 30px;
+    letter-spacing: 0.2em;
+  }
+
+  .menu__social-network {
+    display: flex;             /* Aligne les éléments en ligne */
+    justify-content: center;   /* Centre les éléments horizontalement */
+    align-items: center;       /* Aligne les éléments verticalement */
+    margin-top: -150px; 
+    padding-left: 50 px;
+           /* Positionne les icônes plus en hauteur (ajustez la valeur) */
+  }
+  
+  .menu__social-network li {
+    margin: 0 10px;            /* Espacement entre les icônes */
+  }
+ 
+  .menu__list a {
+    font-size: 26px;
+  }
+
+.language-toggle {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    background-color: #4285f4;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Switch toggle */
+.toggle-switch {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position initiale */
+.toggle-switch .flag.flag-fr {
+    background: linear-gradient(to right, #0055A4, #FFF, #EF4135);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Position lorsque activé */
+.toggle-switch.active {
+    transform: translateX(35px);
+}
+
+/* Drapeau anglais */
+.toggle-switch .flag.flag-en {
+    display: none; /* Masqué par défaut */
+    background: linear-gradient(to bottom, #00247D, #FFF, #CF142B);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Afficher le drapeau anglais quand activé */
+.toggle-switch.active .flag.flag-fr {
+    display: none;
+}
+
+.toggle-switch.active .flag.flag-en {
+    display: block;
+}
