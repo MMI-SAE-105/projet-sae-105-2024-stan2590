@@ -1,1 +1,18 @@
+h1 {
+    font-family: "orbitron";
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 30px;
+}
+h2{
+    font-family: "orbitron";
+    text-align: center;
+    letter-spacing: 0.2em;
+    
+}
 
+h3 {
+    font-family: "orbitron";
+    letter-spacing: 0.2em;
+    margin: 10px;
+}

@@ -1,3 +1,5 @@
+
+
 .language-toggle {
     position: relative;
     width: 70px;
@@ -93,6 +95,7 @@ h2 {
 
 /* Bouton */
 .article__button {
+    font-family: "orbitron";
     display: inline-block;
     padding: 10px 20px;
     background: linear-gradient(90deg, #3B82F6, #6A67CE); /* Dégradé bleu-violet */
@@ -158,7 +161,7 @@ h2 {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #1D2948;
+    background-color: white
     color: #fff;
     box-sizing: border-box;
 }
@@ -180,10 +183,109 @@ h2 {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: "orbitron";
+    letter-spacing: 0.2em;
 }
 
 .contact__submit:hover {
     background: linear-gradient(90deg, #2563EB, #3B82F6);
 }
 
+.hero__title {
+    border-bottom: 2px solid black;   
+    letter-spacing: 0.2em;
 
+}
+
+p{
+    font-family: "roboto";
+    letter-spacing: 0.1em;
+    font-weight: 400
+    font-size: 30px !important;
+    margin: 10px ;
+}
+
+.section__image-article {
+    margin: 20px;
+}
+
+.timeline {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.timeline__image {
+    width: 140px;
+    margin: -5px;
+    
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.event {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event.left {
+    left: -50%;
+    text-align: right;
+}
+
+.event.right {
+    left: 50%;
+    text-align: left;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.event h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.event p {
+    margin: 0;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}

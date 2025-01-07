@@ -37,8 +37,3 @@ const toggleSwitch = document.querySelector('.toggle-switch');
                 // Ajoutez ici le changement de langue en Anglais
             }
         });
-        
-
-
-
-  

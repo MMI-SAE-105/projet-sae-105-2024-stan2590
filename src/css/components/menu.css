@@ -10,6 +10,7 @@
 }
 
 .menu {
+    position: relative; /* Nécessaire pour positionner la croix avec absolute */
     visibility: hidden;
     display: flex;
     position: fixed;
@@ -24,11 +25,19 @@
     transition: all 0.3s ease-in-out;
   }
   .close-btn {
-    position: relative;
-    width: 40px; /* Largeur de la croix */
-    height: 40px; /* Hauteur de la croix */
-    background-color: #FFF;
+    position: absolute; /* Positionnement absolu dans le parent */
+    top: 0px; /* Distance depuis le haut */
+    right: 10px; /* Distance depuis la droite */
+    width: 30px; /* Taille du bouton */
+    height: 30px;
+    background-color: transparent; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    font-size: 50px; /* Taille de la croix */
+    color: white; /* Couleur de la croix */
+    cursor: pointer; /* Curseur au survol */
+    z-index: 10; /* S'assurer que la croix est au-dessus des autres éléments */
 }
+
 
 
 
@@ -54,8 +63,8 @@
     padding-bottom: var(--space1x);
     border-bottom: 2px solid var(--white);
     border-bottom: 2px solid white; 
-    margin-bottom: 30px; 
-    padding-bottom: 30px; 
+    margin-bottom: 40px; 
+    padding-bottom: 80px; 
     width: 330px;
   }
   
@@ -119,6 +128,8 @@
     font-weight: 400
     font-size: 30px;
     letter-spacing: 0.2em;
+    position: relative;
+    top: 50px;
   }
 
   .menu__social-network {
@@ -153,6 +164,9 @@
 
 /* Switch toggle */
 .toggle-switch {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; 
     position: relative;
     width: 30px;
     height: 30px;
