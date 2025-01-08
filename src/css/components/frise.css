@@ -1,0 +1,22 @@
+.timeline {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.timeline__image {
+    width: 140px;
+    margin: -5px;
+    
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}

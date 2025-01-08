@@ -1,0 +1,40 @@
+.event {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event.left {
+    left: -50%;
+    text-align: right;
+}
+
+.event.right {
+    left: 50%;
+    text-align: left;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.event h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.event p {
+    margin: 0;
+    color: #333;
+}

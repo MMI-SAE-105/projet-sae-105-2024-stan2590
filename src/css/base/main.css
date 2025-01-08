@@ -16,3 +16,10 @@ h3 {
     letter-spacing: 0.2em;
     margin: 10px;
 }
+p{
+    font-family: "roboto";
+    letter-spacing: 0.1em;
+    font-weight: 400
+    font-size: 30px !important;
+    margin: 10px ;
+}

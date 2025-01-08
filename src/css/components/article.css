@@ -1,0 +1,60 @@
+.article {
+    background-color: #001F3F; /* Fond sombre */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 20px;
+    width: 300px; /* Largeur de la carte */
+    text-align: center; /* Centrer le contenu */
+    margin: 20px auto; /* Centrer la carte dans la page */
+}
+
+/* Image de la carte */
+.article__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Espacement en dessous de l'image */
+}
+
+.card__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%; /* Rendre l'image circulaire */
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* Texte de description */
+.article__description {
+    color: #ffffff; /* Texte blanc */
+    font-size: 14px; /* Taille du texte */
+    line-height: 1.5; /* Hauteur de ligne pour la lisibilité */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+/* Bouton */
+.article__button {
+    font-family: "orbitron";
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #3B82F6, #6A67CE); /* Dégradé bleu-violet */
+    color: #ffffff; /* Texte blanc */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet survol bouton */
+.article__button:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre accentuée */
+}
+.section__image-article {
+    width: 350px;
+}
+.section__image-article {
+    margin: 20px;
+}
