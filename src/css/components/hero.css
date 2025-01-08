@@ -1,4 +1,6 @@
-
+.hero__title--home {
+    border-bottom: black 2px solid;
+}
 
 .language-toggle {
     position: relative;

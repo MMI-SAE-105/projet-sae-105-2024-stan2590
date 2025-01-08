@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : GAY
+- PRÉNOM : evan
+- GROUPE : B1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/kOT9816zSUHxFT9p7EICBC/Maquettes-projet-individuel-%E2%80%94-pr%C3%A9nom-NOM-(Copy)-(Copy)?node-id=3705-143&p=f&t=cyDgIbRMB0nKS3uS-0
