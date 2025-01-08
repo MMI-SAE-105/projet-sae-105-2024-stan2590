@@ -59,7 +59,9 @@
     display: block;
 }
 
-/* Style de la section card */
+.section__image-article {
+    width: 350px;
+}
 .article {
     background-color: #001F3F; /* Fond sombre */
     border-radius: 20px; /* Coins arrondis */
